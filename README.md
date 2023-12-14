@@ -1,7 +1,5 @@
 <h1 align="center">😸 Pets-Life App 🐶</h1>
 
-## Description
-
 Welcome to Pets-Life, the ultimate application for the care of your pets! Pets-Life is a platform dedicated to providing animal daycare services, allowing you to have your beloved pets taken care of and happy while you're busy.
 
 ## 🙆👨‍💻 Author (Ctrl + Click to view profiles)
