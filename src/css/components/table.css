@@ -1,0 +1,27 @@
+#table-administration {
+    border-collapse: collapse;
+    justify-content: center;
+    width: 80%;
+}
+
+.td-table{
+    text-align: left;
+    height: 50px;
+    vertical-align: bottom;
+    border: 1px black solid;
+    padding: 15px;
+}
+
+.field-table{
+    font-size: calc(0.8rem + 0.5vw);
+}
+.th-table{
+    background-color: #f2f2f2;
+    border: 1px black solid;
+}
+.table-page{
+    justify-content: center;
+    text-align: -webkit-center;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" type = "image/ico" href = "../logo.ico">
+        <title>Reservation</title>
+        <link rel="stylesheet" href="../css/reservation.css">
+    </head>
+    <body>
+        <!-- Aqui va el header-->
+
+        <form class="form-reservation" id="form-reservation">
+            <div class="sections-container">
+                <div class="left-section">
+                    <h2 class="title-reservation">Reservation form</h2>
+                    <div id="fields-inputs">
+                        <label class="field-input-reservation">Field 1</label>
+                        <input class="input-perfil" placeholder="Field 1" /><br>
+                        <label class="field-input-reservation">Field 2</label>
+                        <input class="input-perfil" placeholder="Field 2" /><br>
+                        <label class="field-input-reservation">Field 3</label>
+                        <input class="input-perfil" placeholder="Field 3" /><br>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <h2 class="title-reservation">Choose day</h2>
+                    <div id="date-reservation-input">
+                    <label class="date-reservation">From: </label>
+                    <input type="date" class="input-date" id="datePicker"><br>
+                    <label class="date-reservation">To:</label>
+                    <input type="date" class="input-date" id="datePicker">
+                    </div>
+                </div>
+            
+            </div>
+            <div class="second-part">
+                <div class="availability-section">
+                    <label id="availability-reservation">Availability: </label>
+                    <button type="button" class="time-box">16:00</button>
+                    <button type="button" class="time-box">17:00</button>
+                    <button type="button" class="time-box">18:00</button>
+                </div>
+                <button type="submit" form="form-reservation" class="confirm-button" value="Submit">Confirm reservation</button>
+            </div>
+        <form>
+        
+        <!-- Aqui va el footer-->
+    </body>
+</html>

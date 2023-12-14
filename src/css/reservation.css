@@ -1,0 +1,94 @@
+.title-reservation {
+    font-size: 1.5rem;
+}
+
+#availability-reservation {
+    font-size: 1.2rem;
+    margin-left: 1.3rem;
+}
+
+.field-input-reservation{
+    display: block;
+    margin-top: 1rem;
+}
+
+.sections-container {
+    display: flex;
+    width: 100%;
+    height: calc(20rem + 10vh);
+}
+
+.input-perfil{
+    width: 90%;
+    height: 1rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+
+.left-section,
+.right-section {
+    width: 48%;
+    border: 1px solid black;
+    margin: 1rem;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fields-inputs{
+    width: 80%;
+}
+
+.date-reservation{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#date-reservation-input, .input-date{
+    width: 80%;
+}
+
+.second-part{
+    display: flex;
+    margin: 1rem;
+    background-color: #ccc;
+    padding: 1rem;
+    align-items: center;
+    border: 1px black solid;
+}
+
+.availability-section {
+    width: 46%;
+    height: calc(6rem + 1vh);
+    margin-left: 1rem;
+    display: contents;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.time-box {
+    width: 20%;
+    height: 2rem;
+    margin-right: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+.confirm-button {
+    border: 1px solid black;
+    background-color: #e4e2e2;
+    height: calc(2rem + 1.5vh);
+    font-size: 1rem;
+    margin-left: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
