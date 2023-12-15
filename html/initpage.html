@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/ico" href="../logo.ico">
+    <title>Daycare Information</title>  
+    <!-- Applying styles -->
+    <link rel="stylesheet" type="text/css" href="../css/initPage.css" media="(min-width: 40em)" onload="this.media='all'"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/components/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Confirm User -->
+    <script src="../js/validateLogin.js"></script>
+    <script src="../js/logOut.js"></script>
+    <!-- Load init page content -->
+    <script src="../js/loadInitPage.js"></script>
+    <!-- Validate User Register-->
+    <script src="../js/validateUserLogged.js"></script>
+    <!-- Bootstrap dependencies -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Font Awesome dependencies -->
+    <script src="https://kit.fontawesome.com/9cdb4512b3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body-form">
+    <!-- Dynamic load of the header -->
+    <script src="../js/loadComponents.js"></script>
+    <header id="header"></header>
+    <!-- Body page -->    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="image-container">
+                    <img src="../assets/images/mapa_granCanaria.png" alt="Mapa Gran Canaria" class="image-rectangle"/>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="location-list">
+                    <h3 class="location-list-title">Featured Daycare Centers</h3>
+                    <ul id="daycare-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container info-container" id="daycare-info-container">
+        <div id="position-information-daycare">
+            <h2 id="daycare-name" class="fw-bold info-title"></h2>
+            <div class="align-content">
+                <p id="daycare-description"></p>
+                <ul id="daycare-services"></ul>
+                <p id="daycare-price"></p>
+                <p id="daycare-other-info"></p>
+            </div>
+            <div class="reserve-button">
+                <a href="reservation.html" class="button-reservation"><strong>Make a Reservation</strong></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container info-container">
+        <h2>Reviews</h2>
+        <div id="daycare-reviews"></div>
+        <div class="review-form">
+            <h3 class="review-form-title">Leave a Review</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="user-review">Your Review</label>
+                    <textarea id="user-review" name="user-review" rows="4" class="form-control" required></textarea>
+                </div>
+                <div id="button-review-position">
+                    <button type="submit" class="btn btn-primary submit-review-button">Submit Review</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Dynamic load of the footer -->  
+    <script>loadComponents("../html/components/footer.html", "footer")</script>
+    <footer id="footer" style="margin-top: auto;"></footer>
+</body>
+</html>
