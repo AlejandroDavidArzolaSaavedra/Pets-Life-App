@@ -10,23 +10,27 @@ This app has been developed by:
 <table>
   <tr>
     <td width="50%">
-      <h3 align="center">Información sobre Pets Life</h3>
+      <h3 align="center">Information about Pets Life</h3>
       <div align="center">
-        <img src="https://github.com/AlejandroDavidArzolaSaavedra/Pets-Life-App/assets/90756437/3dc8b94b-7ed1-4ed4-8c08-c31ce495cef9" width="400" alt="App pets life">
-        <p>Explore la aplicación Pets Life para obtener información detallada y navegar por sus distintas secciones.</p>
+        <img src="https://github.com/AlejandroDavidArzolaSaavedra/Pets-Life-App/assets/90756437/3dc8b94b-7ed1-4ed4-8c08-c31ce495cef9" width="400" alt="Pets Life App">
+        <p>Explore the Pets Life application for detailed information and navigate through its different sections. Services include pet care, personalized nutrition plans, and cozy accommodation.</p>
       </div>
     </td>
     <td width="50%">
       <br>
-      <h3 align="center">Servicios de Pets Life</h3>
+      <h3 align="center">Pets Life Services</h3>
       <div align="center">
-        <img src="https://github.com/AlejandroDavidArzolaSaavedra/Pets-Life-App/assets/90756437/e7f56bee-2d40-49bc-b74e-c2245db0addf" width="400" alt="App pets life">
+        <img src="https://github.com/AlejandroDavidArzolaSaavedra/Pets-Life-App/assets/90756437/e7f56bee-2d40-49bc-b74e-c2245db0addf" width="400" alt="Pets Life App">
         <br>
-        <p>Descubra los servicios ofrecidos por Pets Life.</p>
+        <p>Discover the range of services offered by Pets Life, including pet care, personalized nutrition plans, and comfortable accommodation.</p>
+        <p>   </p>
+        <br>
       </div>
     </td>
   </tr>
 </table>
+
+
 
 
 ## Key Features
