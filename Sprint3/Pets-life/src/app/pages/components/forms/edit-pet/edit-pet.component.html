@@ -1,0 +1,30 @@
+<body id="body-form">
+    <!-- Body page -->
+    <div class="form-animal-position h-75">
+        <form class="form-animal" id="form-animal">
+            <h2 id="title-form">Edit Pet</h2>
+            <div class="field-with-text">
+                <label class ="field-form" for="lname">Name:</label><br>
+                <input class="input-form"  type="text" id="lname" name="lname" placeholder="${pet.name}" readonly><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="lweight">Weight:</label><br>
+                <input class="input-form" type="text" id="lweight" name="lweight" readonly><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="lphoto">Photo:</label><br>
+                <input class="input-form" type="text" id="lphoto" name="lphoto" readonly><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="ltypepet">Type of Pet:</label><br>
+                <input class="input-form"  type="text" id="ltypepet" name="ltypepet" readonly><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="lbreed">Breed:</label><br>
+                <input class="input-form" type="text" id="lbreed" name="lbreed" readonly><br>
+            </div>
+            <button class="button-form login-button" id="cancel-button" [routerLink]="['/my-pets']">Cancel</button>
+            <button type="submit" form="form-animal" class="button-form login-button" id="save-button" value="Submit" [routerLink]="['/my-pets']">Save changes</button>
+        </form>
+    </div>
+</body>

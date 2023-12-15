@@ -1,0 +1,271 @@
+
+  
+  .carousel-item-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .carousel-item-content:hover {
+    display: block;
+  }
+
+  
+.carousel-inner {
+    position: relative;
+  }
+
+  .carousel-item {
+    position: relative;
+    text-align: center;
+  }
+  
+  .carousel-item-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+  }
+  
+  .carousel-item {
+    display: none;
+  }
+  #main-title{
+    margin-top: 2rem;
+  }
+
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-item img {
+    width: 120%;
+  }
+  
+  
+  .carousel-caption-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .header-image-container {
+    color: #61f5eb;
+  }
+
+.container-homepage {
+    margin-top: 8rem;
+}
+
+.todo {
+    margin: 5rem 0;
+}
+
+#secondary-title{
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.app-name {
+    width: 60%;
+    font-size: 2vw;
+    font-weight: bold;
+    height: 10vh;
+    background-color: #07F9A2;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    box-shadow: 2px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-image-container {
+    font-weight: bold;
+    font-style: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.white-rectangle {
+    font-size: calc(1rem + 0.7vw);
+    width: 50vw;
+    max-width: 50vw;
+    height: auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.description-with-text {
+    background-color: #07F9A2;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    padding-bottom: 2rem;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    color: black;
+    box-shadow: 9px 16px 4px rgba(0, 0, 0, 0.1);
+}
+
+#description-text {
+    display: inline-block;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: calc(2rem + 0.7vw);
+    margin: 1rem 0;
+}
+.imagenes{
+    width: 20%;
+}
+
+.name-with-description {
+    width: 60%;
+    display: inline-block;
+    text-align: -webkit-center;
+}
+
+.managemnet-carousel {
+    width: 36%;
+    max-width: 36%;
+    max-height: 36%;
+    display: inline-block;
+    margin-left: 1rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.square {
+    width: calc(25vw + 3rem);
+    height: calc(25vw + 3rem);
+    border-radius: 10px;
+    margin-left: 60px;
+    box-shadow: 9px 16px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-homepage-picture {
+    text-align: left;
+}
+
+/* Changes in carousel */
+.carousel-caption-overlay {
+    bottom: 0;
+    position: absolute;
+    margin-left: 3.8rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.description-text {
+    font-size: 1.5rem;
+}
+
+.carousel-caption-overlay, .carousel-caption-overlay p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: auto;
+    height: 20%;
+    margin: 4rem;
+    top: 15%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    z-index: 3;
+}
+
+.carousel-control-prev {
+    left: 0;
+    padding: 0.5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.carousel-control-next {
+    right: 0;
+    margin-right: 0.3rem;
+    padding: 0.5rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Tablet and Phones */
+@media only screen and (max-width: 1200px),
+       only screen and (max-width: 750px) {
+    .managemnet-carousel {
+        display: none;
+    }
+
+    .name-with-description, .app-name{
+        width: 90%;
+        padding: 2rem;
+        font-size: 5vw;
+        text-align: center;
+        margin: 0 auto; 
+        margin-bottom: 2rem;
+    }
+
+    .app-name {
+        font-size: 5vw; 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex; 
+        max-width: 100%; 
+    }
+
+    .container-homepage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .description-with-text {
+        width: 90%; 
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%; 
+    }
+
+    .white-rectangle {
+        width: 100%; 
+        font-size: calc(0.8rem + 1vw); 
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+
+    #description-text {
+        font-size: 0.5vw;
+        text-align: center;
+    }
+}

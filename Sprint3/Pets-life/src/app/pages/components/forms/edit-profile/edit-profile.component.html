@@ -1,0 +1,30 @@
+
+<body id="body-form">
+    <div class="form-animal-position w-100 mb-5 h-75">
+        <form class="form-animal" id="form-animal">
+            <h2 id="title-form">Edit profile</h2>
+            <div class="field-with-text">
+                <label class ="field-form" for="lname">Name:</label><br>
+                <input class="input-form"  type="text" id="lname" name="lname" readonly><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="lapellido">Surname:</label><br>
+                <input class="input-form" type="text" id="lapellido" name="lapellido" readonly><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="lcorreo">Email:</label><br>
+                <input class="input-form"  type="text" id="lcorreo" name="lcorreo" readonly><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="lpass">Password:</label><br>
+                <input class="input-form" type="password" id="llpass" name="llpass" readonly><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="lphoto">Photo:</label><br>
+                <input class="input-form" id="lphoto" name="lphoto" readonly><br>
+            </div>
+            <button class="button-form login-button" id="cancel-button" [routerLink]="['/profile']">Cancel</button>
+            <button type="submit" form="form-animal" id="log" class="button-form login-button" value="Submit" [routerLink]="['/profile']">Save changes</button>
+        </form>
+    </div>
+</body>

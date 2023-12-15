@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@fortawesome/angular-fontawesome": "^0.13.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@popperjs/core": "^2.11.8",
+    "angular-font-awesome": "^3.1.2",
+    "bootstrap": "^5.3.1",
+    "firebase": "^10.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.7.1"
+  }
+}

@@ -1,0 +1,89 @@
+<body>
+<form class="form-reservation" id="form-reservation">
+  <div class="all-page">
+    <div class="sections-container">
+      <div class="left-section">
+        <h2 class="title-reservation">Reservation</h2>
+        <div id="fields-inputs">
+          <label class="field-input-reservation">Pet 1</label>
+<select class="input-perfil" id="selector-pet-first" name="pet1" required [(ngModel)]="selectedDaycare.pet1">
+  <option value="" [disabled]="isPetDisabled('')"></option>
+  <option *ngFor="let petName of petNames" [value]="petName" [disabled]="isPetDisabled(petName)">{{ petName }}</option>
+</select><br>
+
+<label class="field-input-reservation">Pet 2</label>
+<select class="input-perfil" id="selector-pet-second" name="pet2" [(ngModel)]="selectedDaycare.pet2" [disabled]="isPetDisabled(selectedDaycare.pet1) || isPetDisabled('')">
+  <option value="" [disabled]="isPetDisabled(selectedDaycare.pet1) || isPetDisabled('')"></option>
+  <option *ngFor="let petName of petNames" [value]="petName" [disabled]="isPetDisabled(petName) || selectedDaycare.pet1 === petName">{{ petName }}</option>
+</select><br>
+
+<label class="field-input-reservation">Pet 3</label>
+<select class="input-perfil" id="selector-pet-third" name="pet3" [(ngModel)]="selectedDaycare.pet3" [disabled]="isPetDisabled(selectedDaycare.pet1) || isPetDisabled(selectedDaycare.pet2) || isPetDisabled('')">
+  <option value="" [disabled]="isPetDisabled(selectedDaycare.pet1) || isPetDisabled(selectedDaycare.pet2) || isPetDisabled('')"></option>
+  <option *ngFor="let petName of petNames" [value]="petName" [disabled]="isPetDisabled(petName) || selectedDaycare.pet1 === petName || selectedDaycare.pet2 === petName">{{ petName }}</option>
+</select><br>
+          
+<label class="field-input-reservation">Addition 1</label>
+<select class="input-perfil" id="selector-addition-first" name="addition1" [(ngModel)]="selectedDaycare.addition1">
+  <option value="" [disabled]="isAdditionDisabled('')"></option>
+  <option *ngFor="let service of selectedDaycare.services" [value]="service" [disabled]="isAdditionDisabled(service)">
+    {{ service }}
+  </option>
+</select><br>
+
+<label class="field-input-reservation">Addition 2</label>
+<select class="input-perfil" id="selector-addition-second" name="addition2" [(ngModel)]="selectedDaycare.addition2">
+  <option value="" [disabled]="isAdditionDisabled('')"></option>
+  <option *ngFor="let service of selectedDaycare.services" [value]="service" [disabled]="isAdditionDisabled(service)">
+    {{ service }}
+  </option>
+</select><br>
+
+<label class="field-input-reservation">Addition 3</label>
+<select class="input-perfil" id="selector-addition-third" name="addition3" [(ngModel)]="selectedDaycare.addition3">
+  <option value="" [disabled]="isAdditionDisabled('')"></option>
+  <option *ngFor="let service of selectedDaycare.services" [value]="service" [disabled]="isAdditionDisabled(service)">
+    {{ service }}
+  </option>
+</select><br>
+        </div>
+      </div>
+      <div class="right-section">
+        <div id="title-choose-date-label">
+          <h2 class="title-reservation">Choose Date</h2>
+        </div>
+        <div id="date-reservation-input">
+          <label class="date-reservation">Check in: </label>
+          <input type="date" class="input-date" id="datePickerCheckIn" [(ngModel)]="selectedDaycare.checkIn" (ngModelChange)="calculateTotalPrice()"><br>
+          <label class="date-reservation">Check out:</label>
+          <input type="date" class="input-date" id="datePickerCheckOut" [(ngModel)]="selectedDaycare.checkOut" (ngModelChange)="calculateTotalPrice()">                        
+        </div>
+        <label class="field-input-total-price">Total price:</label>
+        <input class="input-date" id="daycare-price" readonly [(ngModel)]="totalPrice" />
+
+        <label class="field-input-reservation">Daycare Services</label>
+        <ul id="daycare-services">
+          <li *ngFor="let service of selectedDaycare.services">{{ service }}</li>
+        </ul>
+        <div id="label-availability-reservation">
+          <h4 id="availability-reservation">Availability: Available</h4><br>
+        </div>
+        <div class="availability-section">
+          <label class="time-box">
+            <input type="radio" name="selected-time" value="16:00" [(ngModel)]="selectedDaycare.selectedTime"> 16:00
+          </label>
+          <label class="time-box">
+            <input type="radio" name="selected-time" value="17:00" [(ngModel)]="selectedDaycare.selectedTime"> 17:00
+          </label>
+          <label class="time-box">
+            <input type="radio" name="selected-time" value="18:00" [(ngModel)]="selectedDaycare.selectedTime"> 18:00
+          </label>
+        </div>
+        <div id="button-position-reservation">
+          <button type="submit" form="form-reservation" class="confirm-button" id="confirm-button">Confirm</button>
+        </div>
+      </div>                
+    </div>
+  </div>   
+</form>
+</body>

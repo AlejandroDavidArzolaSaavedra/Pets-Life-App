@@ -1,0 +1,29 @@
+<body id="body-form">   
+  <div class="form-register-position h-75">
+    <form  id="form-register" *ngIf="userForm" [formGroup]="userForm" (ngSubmit)="signUp()" enctype="multipart/form-data">
+      <h2 class="title-form" id="login-form-header">Sign Up</h2><br>
+      <div class="field-with-text">
+        <label class="field-form">Name <span class="required">*</span></label><br>
+        <input class="input-form" formControlName="nombre" placeholder="****" /><br>
+      </div>
+      <div class="field-with-text">
+        <label class="field-form">Surname</label><br>
+        <input class="input-form" formControlName="apellidos" placeholder="****" /><br>
+      </div>
+      <div class="field-with-text">
+        <label class="field-form">Email <span class="required">*</span></label><br>
+        <input class="input-form" formControlName="correo" placeholder="****" /><br>
+      </div>
+      <div class="field-with-text">
+        <label class="field-form">Password: <span class="required">*</span></label><br>
+        <input type="password" class="input-form" formControlName="password" placeholder="****" /><br>
+      </div>
+      <div class="field-with-text">
+        <label class="field-form">Photo</label><br>
+        <input type="file" (change)="onFileChange($event)" />
+      </div>
+      
+      <button type="submit" id="log" class="button-form login-button" [disabled]="!userForm.valid">Sign Up</button>
+    </form>
+  </div>
+</body>

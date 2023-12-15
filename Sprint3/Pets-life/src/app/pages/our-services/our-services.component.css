@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+/* Contenedor general */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 180px;
+}
+
+/* Título de la sección */
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #15D696;
+}
+
+/* Cuadros de servicios */
+.services-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 36px;
+    color: #15D696;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #777;
+}
+
+
+/*Tablet*/
+@media only screen and (max-width: 1200px) {}
+
+/*Movil*/
+@media only screen and (max-width: 750px) {
+    .container {
+        background-color: #09C184;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .services-box {
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+    }
+    .section-title h2{
+        color: #f7f7f7;
+    }
+    
+}

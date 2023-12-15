@@ -1,0 +1,15 @@
+<body>
+    <div class="container ini-page">
+        <h1 class="page-title">My Pets</h1>
+        <div *ngIf="pets.length === 0" class="no-pets-message">
+            <p>You don't have any pets yet. Add a pet using the button below.</p>
+        </div>
+        <div *ngIf="pets.length > 0" class="rectangle-pets" id="pets-container">
+            <div *ngFor="let pet of pets" class="pet-item" (click)="selectPet(pet)">
+                <img alt="Pet Photo" class="pet-photo" src="../assets/images/foto_perfil.png">
+                <h3>{{ pet.name }}</h3>
+            </div>
+        </div>
+        <button class="button-form" routerLink="/add-pet">Add a Pet</button>
+    </div>
+</body>

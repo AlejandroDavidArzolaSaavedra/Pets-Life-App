@@ -1,0 +1,62 @@
+<body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="image-container">
+            <img src="../../../assets/images/mapa_granCanaria.png" alt="Mapa Gran Canaria" class="image-rectangle" />
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="location-list">
+                <h3 class="location-list-title">Featured Daycare Centers</h3>
+                <ul id="daycare-list">
+                  <li *ngFor="let daycareItem of allDaycares" (click)="selectDaycare(daycareItem)">
+                    {{ daycareItem.name }}
+                  </li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container info-container" *ngIf="selectedDaycare">
+      <div id="position-information-daycare">
+        <h2 id="daycare-name" class="fw-bold info-title">{{ selectedDaycare.name }}</h2>
+        <div class="align-content">
+          <p id="daycare-description">{{ selectedDaycare.description }}</p>
+          <ul id="daycare-services">
+            <li *ngFor="let service of selectedDaycare.services">{{ service }}</li>
+          </ul>
+          <p id="daycare-price">{{ selectedDaycare.price }}</p>
+          <p id="daycare-other-info">{{ selectedDaycare.otherInfo }}</p>
+        </div>
+        <div class="reserve-button">
+          <a href="reservation" class="button-reservation"><strong>Make a Reservation</strong></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container info-container">
+        <h2>Reviews</h2>
+        <div id="daycare-reviews">
+          <div *ngFor="let review of reviews" class="review">
+            <img [src]="review.photoUserMessage" alt="User Photo" class="image-user" />
+            <h4 class="user-name">{{ review.nameUserMessage }}</h4>
+            <p class="user-text">{{ review.message }}</p>
+          </div>
+        </div>
+        <div class="review-form">
+          <h3 class="review-form-title">Leave a Review</h3>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="user-review">Your Review</label>
+              <textarea id="user-review" name="user-review" rows="4" class="form-control" required></textarea>
+            </div>
+            <div id="button-review-position">
+              <button type="submit" class="btn btn-primary submit-review-button">Submit Review</button>
+            </div>
+          </form>
+        </div>
+      </div>      
+  </body>
+  

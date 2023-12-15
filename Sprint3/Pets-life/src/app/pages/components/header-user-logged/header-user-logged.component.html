@@ -1,0 +1,56 @@
+<header class="header display-high-width">
+    <div class="logo-container">
+        <nav class="nav-header">
+            <a routerLink="/" aria-label="logo" class="imagen-logo"><i class="fa-solid fa-paw logo" id="logo-icon-header"></i></a>
+            <a routerLink="my-pets" class="link">My Pets</a>
+            <a routerLink="init-page" class="link">Pets Daycare</a>
+            <a routerLink="/history" class="link">History</a>
+        </nav>
+    </div>
+    <div class="links-register-log">
+        <button class="register-button hide" (click)="logOut()"><i class="fa-solid fa-right-from-bracket"></i> Log Out</button>
+        <button class="login-button hide" (click)="goToProfile()"><i class="fa-solid fa-user"></i> Profile</button>
+    </div>
+</header>
+
+<!-- Header phone bootstrap -->
+<div class="header-phone display-phone-width">
+    <nav class="navbar fixed-top --bs-teal" style="background-color: #07F9A2;">
+        <div class="container-fluid">
+            <a routerLink="/" aria-label="Home" class="imagen-logo"><i class="fa-solid fa-paw logo" id="logo-icon-header"></i></a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" style="background-color: #112D38;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white text-center" id="offcanvasNavbarLabel">Pets Life</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a routerLink="homepage" aria-label="Home" class="link nav-link text-white link-phone"><span class="span-space"></span>Homepage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="init-page" aria-label="Home" class="link nav-link text-white link-phone"><span class="span-space"></span>Pets DayCare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="my-pets" aria-label="Home" class="link nav-link text-white link-phone"><span class="span-space"></span>My Pets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="history" aria-label="Home" class="link nav-link text-white link-phone"><span class="span-space"></span>History</a>
+                        </li>                           
+                    </ul>
+                    <div class="content-phone" id="phone-icons-logged">
+                        <div id="users-logged-position-button">
+                            <button class="register-button hide" id="register-button-movil" (click)="logOut()"><i class="fa-solid fa-right-from-bracket"></i> Log Out</button>
+                            <button class="login-button hide" id="login-button-movil" (click)="goToProfile()"><i class="fa-solid fa-user"></i> Profile</button>
+                        </div>
+                        <i class="fa-solid fa-paw text-white" id="logo-movil-icon"></i>
+                        <p class="text-white title-phone">PETS-LIFE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

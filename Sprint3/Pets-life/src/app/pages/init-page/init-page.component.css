@@ -1,0 +1,260 @@
+.image-rectangle, .info-container, .location-list, .reviews-container, .review-form, .review, .button-reservation {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body{
+    margin-top: 10rem;
+}
+
+#position-information-daycare{
+    margin: 2rem;
+}
+
+.container {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.align-content{
+    text-align: left; 
+    padding-left: 4rem; 
+    padding-right: 4rem;
+}
+
+.image-rectangle {
+    max-width: 100%;
+    margin-top: 2rem;
+    height: 20rem;
+}
+
+#span-space {
+    margin-bottom: 2rem;
+}
+
+.info-container {
+    text-align: center;
+    background-color: #5AE1B8;
+    color: #444;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.info-title {
+    background-color: #ffffff;
+    padding: 1rem;
+    color: #5AE1B8;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.service-list, .location-list ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.location-list {
+    text-align: center;
+    background-color: #F7F7F7;
+    border: 1px solid #E6E6E6;
+    padding: 2rem;
+    margin-top: 2rem;
+    max-height: 20rem;
+    width: 25rem; 
+    overflow-y: auto; 
+}
+
+.location-list-title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.location-list li {
+    color: #444;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.location-list li:nth-child(odd) {
+    background-color: #F7F7F7;
+}
+
+.location-list li:hover {
+    background-color: #5AE1B8;
+    font-weight: bold;
+    cursor: pointer;
+    color: #444;
+}
+
+.location-name {
+    font-weight: bold;
+    color: #444;
+}
+
+.reviews-container {
+    background-color: #2fb990;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.image-comment-with-name {
+    text-align: justify;
+}
+
+#button-review-position {
+    text-align: right;
+}
+
+.reviews-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #FDFDFD;
+    color: #333;
+}
+
+.submit-review-button {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-color: #07F9A2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-review-button:hover {
+    background-color: #09C184;
+}
+
+.review-form {
+    margin-top: 2rem;
+    background-color: #F5F5F5;
+    padding: 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    color: #555;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.review {
+    background-color: #ffffff;
+    text-align: center;
+    margin: 1rem;
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+}
+
+.image-user {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.user-name {
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.comments-users {
+    text-align: left;
+    display: inline-block;
+}
+
+.user-text {
+    width: 80%;
+    margin: 0 auto;
+    font-style: italic;
+    color: #333;
+}
+
+.button-reservation {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-color: #F7F7F7;
+    color: #09C184;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-reservation:hover {
+    background-color: #09C184;
+    color: white;
+}
+
+.text-information-services {
+    text-align: left;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1200px) {
+    .image-rectangle {
+        width: 100%;
+        height: auto;
+    }
+    .reviews-container {
+        max-width: 100%;
+        margin: 0;
+        margin-top: 1rem;
+    }
+}
+
+/* Phones */
+@media only screen and (max-width: 750px) {
+    .daycare-section {
+        background-color: #09C184;
+        display: grid;
+    }
+    .info-container, .reviews-container {
+        width: 100%;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    .image-container {
+        text-align: center;
+    }
+    .align-content{
+        text-align: left; 
+        padding-left: 0rem; 
+        padding-right: 0rem;
+    }
+    .location-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

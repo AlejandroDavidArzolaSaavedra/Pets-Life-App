@@ -1,0 +1,33 @@
+<body class="container">
+  <div class="form-login-position h-75 mb-5">
+    <form #loginForm="ngForm" (ngSubmit)="login()" class="form-login">
+      <h1 id="title-form">Login</h1>
+      <div class="field-with-text">
+        <label class="field-form">Email <span class="required">*</span></label><br>
+        <input class="input-form" type="email" id="email" name="email" placeholder="Enter your email" required
+              [(ngModel)]="email" #emailField="ngModel">
+        <div class="error-message" *ngIf="loginForm.controls['email']?.hasError('required') && (loginForm.controls['email']?.dirty || loginForm.controls['email']?.touched)">
+          Email is required.
+        </div>
+        <div class="error-message" *ngIf="loginForm.controls['email']?.hasError('email') && (loginForm.controls['email']?.dirty || loginForm.controls['email']?.touched)">
+          Enter a valid email address.
+        </div>
+      </div>
+      <div class="field-with-text">
+        <label class="field-form">Password <span class="required">*</span></label><br>
+        <input class="input-form" type="password" id="password" name="password" placeholder="*****" required
+              [(ngModel)]="password" #passwordField="ngModel">
+        <div class="error-message" *ngIf="loginForm.controls['password']?.hasError('required') && (loginForm.controls['password']?.dirty || loginForm.controls['password']?.touched)">
+          Password is required.
+        </div>
+      </div>
+      <div class="error-message" *ngIf="errorMessage">
+        {{ errorMessage }}
+      </div>
+      <div class="button-login-position">
+        <button type="submit" id="log" class="button-form login-button">Login</button>
+      </div>
+      <a class="signup-link" [routerLink]="['/sign-up']">Don't have an account yet? Sign up</a>
+    </form>    
+  </div>
+</body>

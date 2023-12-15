@@ -1,0 +1,46 @@
+<!-- Pending Reservations -->
+<body class="page-history">
+<div class="left-section">
+    <h2 class="title-section-history">Pending Reservations</h2>
+    <div class="white-box" style="background-color: white;">
+        <div *ngFor="let reservation of pendingReservations">
+            <div>
+                <p style="font-weight: bold;">{{ reservation.daycareName }}</p>
+                <p><span style="font-weight: bold;">Arrival:</span> {{ reservation.checkIn }}</p>
+                <p><span style="font-weight: bold;">Departure:</span> {{ reservation.checkOut }}</p>
+                
+                <!-- Iterate over additions array -->
+                <span style="font-weight: bold;">Additional Options:</span>
+                <ul>
+                    <li *ngFor="let addition of reservation.additions">{{ addition.description }}</li>
+                </ul>          
+                <p><span style="font-weight: bold;">Price:</span> {{ reservation.totalPrice }}</p>
+            </div>
+            <hr />
+        </div>
+    </div>
+</div>
+
+<!-- Reservation History -->
+<div class="right-section">
+    <h2 class="title-section-history">Reservation History</h2>
+    <div class="white-box" style="background-color: white;">
+        <div *ngFor="let reservation of reservationHistory">
+            <div>
+                <p style="font-weight: bold;">{{ reservation.daycareName }}</p>
+                <p><span style="font-weight: bold;">Arrival:</span> {{ reservation.checkIn }}</p>
+                <p><span style="font-weight: bold;">Departure:</span> {{ reservation.checkOut }}</p>
+                
+                <!-- Iterate over additions array -->
+                <span style="font-weight: bold;">Additional Options:</span>
+                <ul>
+                    <li *ngFor="let addition of reservation.additions">{{ addition.description }}</li>
+                </ul>
+                
+                <p><span style="font-weight: bold;">Price:</span> {{ reservation.totalPrice }}</p>
+            </div>
+            <hr />
+        </div>
+    </div>
+</div>
+</body>

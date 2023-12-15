@@ -1,0 +1,76 @@
+<body>
+<div class="profile-page">
+    <div class="main-rectangle">
+      <div class="left-section">
+        <div class="profile-photo">
+          <img alt="Profile Photo" id="foto-perfil-profile" src="../assets/images/foto_perfil.png">
+        </div>
+        <br>
+        <h4>Personal Information</h4>
+        <div id="hr-line"></div>
+        <div class="pet-reservation-buttons">
+          <button class="pet-button">
+            <i class="fas fa-dog"></i>
+            <span class="pet-button-label">Pets: <span id="pets"></span>{{userPetsCount}} </span>
+          </button>
+          <button class="reservation-button">
+            <i class="fas fa-calendar-check"></i>
+            <span class="reservation-button-label">Reservations: <span id="reservations"></span> </span>
+          </button>
+        </div>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="right-section">
+        <h2 id="title-personal-information" class="section-title">Personal Information</h2>
+        <div class="input-total-profile">
+          <div class="input-container">
+            <label class="input-label">Name</label>
+            <input id="name-input" class="input-profile" readonly [value]="currentUser?.username" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Last Name</label>
+            <input id="last-name-input" class="input-profile" readonly [value]="currentUser?.lastname" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Email</label>
+            <input id="email-input" class="input-profile" readonly [value]="currentUser?.email" />
+          </div>
+          <div class="input-container">
+            <label class="input-label">Password</label>
+            <input id="password-input" class="input-profile" readonly value="****" />
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <div class="action-menu">
+      <h2 class="section-title">Action Menu</h2>
+      <div class="action-buttons">
+        <div class="action-button">
+          <a class="transparent-button" routerLink="/edit-profile">
+            <i class="fa-solid fa-user action-icon"></i>
+            <span class="action-text">Edit Profile</span>
+          </a>
+        </div>
+        <div class="action-button">
+          <a class="transparent-button" routerLink="/init-page">
+            <i class="fa-solid fa-house-circle-check action-icon"></i>
+            <span class="action-text">Pets Daycare</span>
+          </a>
+        </div>
+        <div class="action-button">
+          <a class="transparent-button" routerLink="/history">
+            <i class="fa-solid fa-note-sticky action-icon"></i>
+            <span class="action-text">History</span>
+          </a>
+        </div>
+        <div class="action-button">
+          <a class="transparent-button" routerLink="/my-pets">
+            <i class="fa-solid fa-paw action-icon"></i>
+            <span class="action-text">My Pets</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

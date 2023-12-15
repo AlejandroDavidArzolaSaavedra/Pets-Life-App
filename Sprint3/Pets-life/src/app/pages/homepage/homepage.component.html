@@ -1,0 +1,38 @@
+<body>
+<div class="container-homepage">
+    <div class="todo">
+      <div class="name-with-description">
+        <h1 id="main-title" class="app-name">{{ mainTitle }}</h1>
+        <div class="description-with-text">
+          <h2 id="secondary-title" class="text-white">{{ secondaryTitle }}</h2>
+          <div class="white-rectangle fw-bold" id="description">{{ description }}</div>
+        </div>
+      </div>
+  
+      <div id="carouselExampleDark" class="carousel carousel-dark slide managemnet-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div *ngFor="let item of carouselItems; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
+            <img [src]="item.imageUrl" alt="{{ item.title }}" class="d-block square image-with-caption">
+            <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5); width: 80%;">
+              <h5 style="color: #07F9A2;">{{ item.title }}</h5>
+              <p style="color: white; font-weight: bold;">{{ item.description }}</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,29 @@
+
+<body id="body-form">
+    <div class="form-animal-position h-75">
+        <form class="form-animal" id="form-animal">
+            <h2 id="title-form">Add Pet</h2>
+            <div class="field-with-text">
+                <label class ="field-form" for="lname">Name: <span class="required">*</span></label><br>
+                <input class="input-form"  type="text" id="lname" [(ngModel)]="pet.name" name="lname"><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="lweight">Weight: <span class="required">*</span></label><br>
+                <input class="input-form" type="text" id="lweight" [(ngModel)]="pet.weight"  name="lweight"><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="lphoto">Photo: <span class="required">*</span></label><br>
+                <input class="input-form" type="text" id="lphoto" [(ngModel)]="pet.photo"  name="lphoto"><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="ltypepet">Type of pet: <span class="required">*</span></label><br>
+                <input class="input-form"  type="text" id="ltypepet" [(ngModel)]="pet.type"  name="ltypepet"><br>
+            </div>
+            <div class="field-with-text">
+                <label class ="field-form" for="lbreed">Breed: <span class="required">*</span></label><br>
+                <input class="input-form" type="text" id="lbreed" [(ngModel)]="pet.breed" name="lbreed"><br>
+            </div>
+            <button type="submit" form="form-animal" id="log"  class="button-form login-button" value="Submit" (click)="addPet()">New pet</button>
+        </form>
+    </div>   
+</body>
