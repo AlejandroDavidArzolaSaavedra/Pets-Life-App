@@ -5,7 +5,7 @@ Welcome to Pets-Life, the ultimate application for the care of your pets! Pets-L
 ## 🙆👨‍💻 Author (Ctrl + Click to view profiles)
 This app has been developed by:
 
-[![GitHub](https://img.shields.io/badge/GitHub-Alejandro%20David%20Arzola%20Saavedra-blue?style=flat-square&logo=github)](https://github.com/AlejandroDavidArzolaSaavedra)
+[![GitHub](https://img.shields.io/badge/GitHub-Alejandro%20David%20Arzola%20Saavedra-red?style=flat-square&logo=github)](https://github.com/AlejandroDavidArzolaSaavedra)
 
 <table>
   <tr>
