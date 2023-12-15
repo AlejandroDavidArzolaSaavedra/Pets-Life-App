@@ -1,0 +1,16 @@
+{
+    "history": [
+      {
+        "userId": "1",
+        "idReservations": ["reservation101", "reservation102", "reservation103"]
+      },
+      {
+        "userId": "2",
+        "idReservations": ["reservation104", "reservation105"]
+      },
+      {
+        "userId": "3",
+        "idReservations": ["reservation106", "reservation107", "reservation108", "reservation109"]
+      }
+    ]
+  }  

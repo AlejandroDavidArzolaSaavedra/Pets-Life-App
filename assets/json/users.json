@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Ramón",
+      "surname": "Valls Martin",
+      "email": "ramon@gmail.com",
+      "password": "1234",
+      "photo": "../assets/images/foto_perfil_Ramon.jpg",
+      "pets": 2,
+      "admin": true,
+      "reservations": 3,
+      "idPets": ["pet_id_1", "pet_id_2"],
+      "idReservations": ["reservation_id_1", "reservation_id_2", "reservation_id_3"]
+    },
+    {
+      "id": "2",
+      "name": "Marta",
+      "surname": "Guerra Pradera",
+      "email": "marta@gmail.com",
+      "password": "1234",
+      "photo": "../assets/images/foto_perfil_Marta.jpg",
+      "pets": 1,
+      "admin": false,
+      "reservations": 2,
+      "idPets": ["pet_id_3"],
+      "idReservations": ["reservation_id_4", "reservation_id_5"]
+    },
+    {
+      "id": "3",
+      "name": "Paula",
+      "surname": "Valls Martin",
+      "email": "pavama96@gmail.com",
+      "password": "1234",
+      "photo": "../assets/images/foto_perfil_Paula.jpg",
+      "pets": 0,
+      "admin": false,
+      "reservations": 1,
+      "idPets": [],
+      "idReservations": ["reservation_id_6"]
+    }
+  ]
+}

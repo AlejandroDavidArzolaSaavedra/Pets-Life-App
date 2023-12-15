@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    height: 100%;
+    margin: 6rem;
+}
+
+.section-title {
+    font-size: 28px;
+    text-align: center;
+    color: #15D696;
+    margin-bottom: 30px;
+}
+
+.error-box {
+    display: flex;
+    justify-content: center;
+}
+
+.error-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 400px;
+}
+
+.error-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.error-icon {
+    font-size: 36px;
+    color: #FF5733;
+    margin-bottom: 10px;
+}
+
+.error-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.error-description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.error-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #15D696;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.error-link:hover {
+    background-color: #14B286;
+    color: white;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1200px) {}
+
+/* Phones */
+@media only screen and (max-width: 750px) {}

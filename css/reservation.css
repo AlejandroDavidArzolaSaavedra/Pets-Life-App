@@ -1,0 +1,166 @@
+.all-page {
+  margin: 2rem;
+}
+
+.title-reservation {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  padding: 2rem;
+  background-color: #00b7a6;
+  border-radius: 10px;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-section,
+.right-section {
+  width: 48%;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 10px 15px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.field-input-reservation,
+.field-input-total-price,
+.date-reservation {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.input-group,
+.input-perfil,
+.input-date {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.confirm-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #01DCC3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+#title-choose-date-label {
+  text-align: center;
+}
+
+.confirm-button:hover {
+  background-color: #00b7a6;
+}
+
+.availability-section {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.time-box {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#label-availability-reservation {
+  display: block;
+  margin-top: 2rem;
+}
+
+.time-box:hover {
+  background-color: #00b7a6;
+  color: white;
+}
+
+#button-position-reservation{
+  text-align: center;
+  margin-top: 2rem;
+}
+  
+/* Tablet */
+@media only screen and (max-width: 1200px) {
+  .all-page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .form-reservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .confirm-button {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 750px) {
+  .sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-section, .right-section {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .title-reservation {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .availability-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .time-box {
+    width: 60%;
+    margin: 1rem auto;
+  }
+}

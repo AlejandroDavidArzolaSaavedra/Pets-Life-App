@@ -1,0 +1,78 @@
+{
+  "daycare": [
+    {
+      "id": "daycare1",
+      "name": "Pet Paradise",
+      "location": "San Juan",
+      "description": "Welcome to Pet Paradise - San Juan! We specialize in providing top-notch care for your pets.",
+      "services": ["Daily exercise and play sessions", "Premium grooming services", "Special dietary accommodations"],
+      "pricePerDay": "$30",
+      "otherInformation": "Our trained staff is dedicated to ensuring a safe, comfortable, and engaging environment for your furry friends.",
+      "reviews": [
+        {
+          "userId": "user1",
+          "photoUserMessage": "../assets/images/chica_comentario.jpg",
+          "nameUserMessage": "Laura",
+          "message": "I can't believe how wonderful the daycare services are! My furry friend had the time of his life. Thank you for the amazing experience!"
+        },
+        {
+          "userId": "user2",
+          "photoUserMessage": "../assets/images/chico_comentario.jpg",
+          "nameUserMessage": "Bill",
+          "message": "Absolutely fantastic! The care and attention my pet received were beyond my expectations. The team here truly understands pets' needs."
+        }
+      ]
+    },
+    {
+      "id": "daycare2",
+      "name": "Furry Friends Haven",
+      "location": "Las Palmas",
+      "description": "A purrfect place for your beloved cats.",
+      "services": ["Playroom", "Catnip Treats", "Nap Time"],
+      "pricePerDay": "$60",
+      "otherInformation": "We specialize in providing a stress-free environment for cats.",
+      "reviews": [
+        {
+          "userId": "user1",
+          "photoUserMessage": "../assets/images/chica_comentario.jpg",
+          "nameUserMessage": "Laura",
+          "message": "It was boring"
+        }
+      ]
+    },
+    {
+      "id": "daycare3",
+      "name": "Pawfect Retreat",
+      "location": "Maspalomas",
+      "description": "A wonderful place for your aquatic pets.",
+      "services": ["Custom Tanks", "Feeding Service", "Water Quality Checks"],
+      "pricePerDay": "$40",
+      "otherInformation": "Our experts ensure a comfortable environment for aquatic life.",
+      "reviews": [
+        {
+          "userId": "user2",
+          "photoUserMessage": "../assets/images/chico_comentario.jpg",
+          "nameUserMessage": "Bill",
+          "message": "It is a expensive but the team here truly understands pets' needs."
+        }
+      ]
+    },
+    {
+      "id": "daycare4",
+      "name": "Whisker Wonderland",
+      "location": "Telde",
+      "description": "A wonderful place for your exotic pets.",
+      "services": ["Feeding Service", "Water Quality Checks"],
+      "pricePerDay": "$30",
+      "otherInformation": "Our experts ensure a comfortable environment for exotic life.",
+      "reviews": [
+        {
+          "userId": "user2",
+          "photoUserMessage": "../assets/images/chico_comentario.jpg",
+          "nameUserMessage": "Bill",
+          "message": "It is a amazing daycare Pets!!!"
+        }
+      ]
+    }
+  ]
+}

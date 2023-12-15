@@ -1,0 +1,70 @@
+.parragraph-about-us{
+    font-size: calc(1rem + 0.5vw);
+}
+
+.section-info, .section-about {
+    width: 100%;
+    background-color: #15D696;
+    border-radius: 10px;
+    border: 1px solid rgb(152, 152, 152);
+    margin-bottom: 30px;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.inner-section {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #bfbfbf;
+    border-radius: 10px;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inner-rectangle {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #444;
+    line-height: 1.7;
+}
+
+.highlight {
+    background-color: #ffff99;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hidden-mobile {
+    display: block
+}
+
+#aboutUs-title{
+    font-size: calc(2rem + 1vw);
+}
+
+/* Tablet and phones */
+@media only screen and (max-width: 1200px),
+       only screen and (max-width: 750px) {
+    .section-about, .section-info {
+        padding: 20px;
+    }
+    .hidden-mobile{
+        display: none;
+    }
+    #aboutUs-title {
+        text-align: center;
+        font-size: 2rem
+    }
+
+    .inner-rectangle {
+        font-size: 16px;
+    }
+}

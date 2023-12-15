@@ -1,0 +1,69 @@
+{
+    "reservations": [
+      {
+        "id": "reservation1",
+        "idOwner": "1",
+        "ownerName": "Ramón Valls",
+        "ownerPhotoUrl": "../assets/images/mapa_granCanaria.jpg",
+        "petIds": ["pet1", "pet2"],
+        "checkIn": "2019-09-01",
+        "checkOut": "2020-09-05",
+        "daycareId": "daycare1",
+        "daycareName": "Paw Paradise",
+        "totalPrice": "$150",
+        "totalPriceWithAdditions": "$180",
+        "reservationTime": "09:00 AM",
+        "additions": [
+          {
+            "description": "Grooming",
+            "price": "$30"
+          },
+          {
+            "description": "Training",
+            "price": "$20"
+          }
+        ]
+      },
+      {
+        "id": "reservation2",
+        "idOwner": "1",
+        "ownerName": "Ramón Valls",
+        "ownerPhotoUrl": "../assets/images/mapa_granCanaria.jpg",
+        "petIds": ["pet3"],
+        "checkIn": "2023-08-15",
+        "checkOut": "2023-12-20",
+        "daycareId": "daycare2",
+        "daycareName": "Feline Haven",
+        "totalPrice": "$125",
+        "totalPriceWithAdditions": "$140",
+        "reservationTime": "11:30 AM",
+        "additions": [
+          {
+            "description": "Playroom Access",
+            "price": "$15"
+          }
+        ]
+      },
+      {
+        "id": "reservation3",
+        "idOwner": "2",
+        "ownerName": "Marta Guerra",
+        "ownerPhotoUrl": "../assets/images/mapa_granCanaria.jpg",
+        "petIds": ["pet4"],
+        "checkIn": "2023-07-10",
+        "checkOut": "2023-07-15",
+        "daycareId": "daycare3",
+        "daycareName": "Aquatic Oasis",
+        "totalPrice": "$100",
+        "totalPriceWithAdditions": "$105",
+        "reservationTime": "02:00 PM",
+        "additions": [
+          {
+            "description": "Feeding Service",
+            "price": "$5"
+          }
+        ]
+      }
+    ]
+  } 
+  

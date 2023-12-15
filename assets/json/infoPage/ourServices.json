@@ -1,0 +1,20 @@
+{
+    "services": [
+      {
+        "name": "Pet Care",
+        "icon": "fas fa-paw",
+        "description": "We provide expert care for your pets, ensuring their health, happiness, and comfort."
+      },
+      {
+        "name": "Nutrition Plans",
+        "icon": "fas fa-bone",
+        "description": "Tailored nutrition plans to meet the unique dietary needs of each pet."
+      },
+      {
+        "name": "Cozy Accommodation",
+        "icon": "fas fa-bed",
+        "description": "Comfortable and safe accommodations designed to make your pets feel at home."
+      }
+    ]
+  }
+  

@@ -1,0 +1,150 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #07F9A2;
+}
+
+#body-form{
+    margin-top: 10rem;
+}
+
+.link{
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.display-phone-width {
+    display: none;
+}
+
+.title-phone{
+    font-size: 2rem;
+    min-width: 2rem;
+}
+
+#logo-movil-icon{
+    font-size: 4rem;
+    min-width: 4rem;
+}
+
+.span-space{
+    margin-left: 1rem;
+}
+
+.link-phone {
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 0.1rem;
+}
+
+#logo-icon-header{
+    font-size: 3rem;
+    margin-left: 2.5rem;
+    margin-bottom: 0.5rem;
+    &:hover {
+        color: rgb(19, 165, 112);
+    }
+}
+
+.imagen-logo, .link, .link-phone {
+    text-decoration: none;
+}
+
+.content-phone {
+    flex-direction: column;
+    justify-content: flex-end; 
+    padding: 20px;
+    min-width: 12rem;
+}
+
+#phone-icons-logged{
+    margin-top: calc(1rem + 1vh);
+}
+
+#phone-icons-not-logged{
+    margin-top: calc(4rem + 5vh);
+}
+
+.imagen-logo {
+    margin-right: 10px;
+}  
+
+.register-button, .login-button {
+    padding: 5px 15px;
+    margin-right: 15px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logo-container, .nav-header, .header, .content-phone  {
+    align-items: center;
+}
+
+.display-high-width, .logo-container, .nav-header, .header, .content-phone {
+    display: flex;
+}  
+
+.register-button:hover, .login-button:hover, .link:hover {
+    color: #07F9A2;
+    font-weight: bold;
+    background-color: white;
+}
+
+#register-button-movil:hover, #login-button-movil:hover,.link-phone:hover {
+    background-color: #4ec5bd;
+}
+
+#users-logged-position-button{
+    margin-bottom: 2rem;
+}
+
+.logo, #register-button-movil:hover, #login-button-movil:hover, .link, .link-phone, .register-button, .login-button  {
+    color: white;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1200px) {
+    .display-phone-width{
+        display: none;
+    }
+    .display-high-width{
+        display: flex;
+    }    
+}
+
+/* Phones */
+@media only screen and (max-width: 750px) {
+    .display-phone-width{
+        display: flex;
+    }
+
+    .display-high-width{
+        display: none;
+    }
+
+    #logo-icon-header{
+        margin-left: 0.5rem;
+    }
+
+    .register-button, .login-button{
+        margin-right: 5px;
+        padding: 5px 10px;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    #users-logged-position-button{
+        text-align: center;
+    }
+}

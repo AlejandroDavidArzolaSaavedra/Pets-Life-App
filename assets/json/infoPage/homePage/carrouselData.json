@@ -1,0 +1,20 @@
+{
+    "carousel": [
+      {
+        "title": "Quality Pet Care",
+        "description": "Providing a peaceful and comfortable environment for your pets to relax and enjoy their stay.",
+        "imageUrl": "../assets/images/homepage/catAndDogSleeping.jpg"
+      },
+      {
+        "title": "Expert Caregivers",
+        "description": "Our experienced caregivers ensure your pets receive the attention, love, and care they deserve.",
+        "imageUrl": "../assets/images/homepage/assistanceDog.jpg"
+      },
+      {
+        "title": "Relax on the Beach",
+        "description": "Trust in our reliable services to provide a safe and happy home away from home for your pets.",
+        "imageUrl": "../assets/images/homepage/dogAndCatCuddling.jpg"
+      }
+    ]
+  }
+  

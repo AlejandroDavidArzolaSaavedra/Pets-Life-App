@@ -1,0 +1,31 @@
+{
+  "pets": [
+    {
+      "id": "Pet1",
+      "idOwner": "Ramón",
+      "name": "Mister",
+      "weight": "6",
+      "photo": "../assets/images/mypets/foto_perro_Ramon.png",
+      "typeOfPet": "Dog",
+      "breed": "Yorkshire"
+    },
+    {
+      "id": "pet2",
+      "idOwner": "Ramón",
+      "name": "Coco",
+      "weight": "10",
+      "photo": "../assets/images/mypets/foto_perro_Marta.jpg",
+      "typeOfPet": "Dog",
+      "breed": "Siamese"
+    },
+    {
+      "id": "pet3",
+      "idOwner": "Ramón",
+      "name": "Nemo",
+      "weight": "0.5",
+      "photo": "../assets/images/mypets/foto_perro_Ramon.png",
+      "typeOfPet": "Fish",
+      "breed": "Clownfish"
+    }
+  ]
+}
