@@ -1,6 +1,6 @@
 <h1 align="center">😸 Pets-Life App 🐶</h1>
-
-Welcome to Pets-Life, the ultimate application for the care of your pets! Pets-Life is a platform dedicated to providing animal daycare services, allowing you to have your beloved pets taken care of and happy while you're busy.
+<img align="left" width="150" height="150" src="https://github.com/AlejandroDavidArzolaSaavedra/Pets-Life-App/assets/90756437/e99a04ea-6230-4b95-b405-8cd80c7c8d5f">
+Welcome to Pets-Life, the ultimate application for the care of your pets! Pets-Life is a platform dedicated to providing animal daycare services, allowing you to have your beloved pets taken care of and happy while you're busy.<br><br><br><br><br>
 
 ## 🙆👨‍💻 Author (Ctrl + Click to view profiles)
 This app has been developed by:
@@ -30,27 +30,15 @@ This app has been developed by:
   </tr>
 </table>
 
-
-
-
 ## Key Features
+<img align="left" width="180" height="180" src="https://github.com/AlejandroDavidArzolaSaavedra/Pets-Life-App/assets/90756437/5399660f-d522-4a69-a180-6fd16d46d75f"/>
 
 - **Animal Daycare:**
   - 🏡 Enroll your pets in our trustworthy and cozy daycares.
-  - 🛡️ Ensure a safe and comfortable environment for your animals when you can't attend to them.
-
-- **Pet Profiles:**
   - 📋 Create individual profiles for each of your pets.
   - 🍖 Add relevant information, such as dietary preferences, medical needs, and favorite toys.
-
-- **Real-Time Notifications:**
-  - 📲 Stay informed with instant notifications about the status and well-being of your pets.
-  - 🎉 Receive alerts for special events, such as birthdays and veterinary check-ups.
-
-- **Simple Reservations:**
   - 📅 Make reservations easily with just a few clicks.
-  - ⏰ Choose convenient dates and times for dropping off and picking up your pets.
-
+<br><br><br>
 ## Contributing
 
 Contributions are welcome! If you find any issues or have ideas for improvements, please open an issue or submit a pull request.
