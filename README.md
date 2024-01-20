@@ -10,7 +10,7 @@ This app has been developed by:
 <table>
   <tr>
     <td width="50%">
-      <h3 align="center">Information about Pets Life</h3>
+      <h3 align="center">Main page Pets Life</h3>
       <div align="center">
         <img src="https://github.com/AlejandroDavidArzolaSaavedra/Pets-Life-App/assets/90756437/3dc8b94b-7ed1-4ed4-8c08-c31ce495cef9" width="400" alt="Pets Life App">
         <p>Explore the Pets Life application for detailed information and navigate through its different sections. Services include pet care, personalized nutrition plans, and cozy accommodation.</p>
