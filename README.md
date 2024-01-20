@@ -38,7 +38,7 @@ This app has been developed by:
 - **Animal Daycare:**
   - 🏡 Enroll your pets in our trustworthy and cozy daycares.
   - 📋 Create individual profiles for each of your pets.
-  - 🍖 Add relevant information, such as dietary preferences, medical needs, and favorite toys.
+  - 🍖 Add relevant information, such as dietary preferences, medical needs.
   - 📅 Make reservations easily with just a few clicks.
 <br><br><br>
 ## Contributing
